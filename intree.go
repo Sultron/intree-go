@@ -10,7 +10,7 @@ import (
 // Bounds is the main interface expected by NewINTree(); requires Limits method to access interval limits.
 type Bounds interface {
 	Limits() (Lower, Upper float64)
-	Location() (ID int, Name string)
+	StartingPoint() (ID int, Name string)
 }
 
 
